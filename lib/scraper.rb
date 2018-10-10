@@ -22,8 +22,19 @@ class Scraper
       profile_quote: doc.css(".profile-quote").text
     }
      
-    
     links = doc.css(".social-icon-container a").map {|b| b.attribute("href").value}
+    
+    links.each do |link|
+      if link.include?("github")
+        profile_hash[:github] = link 
+      elsif link.include?("twitter")
+        profile_hash[:twitter] = link 
+      elsif link.include?("linkedin")
+        profile_hash[:linkedin] = link
+      
+      end 
+      
+    end 
     
 binding.pry
   
