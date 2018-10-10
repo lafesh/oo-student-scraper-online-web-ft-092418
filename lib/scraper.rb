@@ -23,7 +23,7 @@ class Scraper
     }
     binding.pry 
     
-    links = doc.css(".social-icon-container a").attr("href").value.include?("github")
+    links = doc.css(".social-icon-container a").map {|b| battr("href").value.include?("github")
       profile_hash[:github] = doc.css(".social-icon-container a").attr("href").value
     end 
     
