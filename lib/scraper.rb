@@ -19,8 +19,12 @@ class Scraper
     doc = Nokogiri::HTML(open(profile_url))
     profile_hash = {
       bio: doc.css(".description-holder" p).text,
+      github: doc.css(".social-icon-container")
       profile_quote: doc.css(".profile-quote").text
     }
+    doc.css(".social-icon-container a").each do |link|
+      if link.include
+    end 
     
     <div class="social-icon-container">
           <a href="https://twitter.com/jmburges"><img class="social-icon" src="../assets/img/twitter-icon.png"/></a>
