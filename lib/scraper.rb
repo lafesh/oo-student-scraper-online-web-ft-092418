@@ -23,7 +23,7 @@ class Scraper
       profile_quote: doc.css(".profile-quote").text
     }
     doc.css(".social-icon-container a").each do |link|
-      if link.include
+      if link.dete
     end 
     
     <div class="social-icon-container">
