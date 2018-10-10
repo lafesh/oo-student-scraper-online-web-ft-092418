@@ -9,8 +9,8 @@ class Scraper
     doc.css("div.student-card").map do |student|
       binding.pry
       student_hash = {
-        name: student.css("h4.student-name".text),
-        location: student.css("p.student-location".text),
+        name: student.css("h4.student-name").text,
+        location: student.css("p.student-location").text,
         profile_url: student.css("a").attr("href").value
       }
     end 
