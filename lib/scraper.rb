@@ -22,6 +22,10 @@ class Scraper
       github: doc.css(".social-icon-container a").attr("href").value if .include?"github",
       profile_quote: doc.css(".profile-quote").text
     }
+    
+    if doc.css(".social-icon-container a").attr("href").value.include?"github"
+      profile_hash[:github] = doc.css(".social-icon-container a").attr("href").value
+    end 
 
     
     #<div class="social-icon-container">
