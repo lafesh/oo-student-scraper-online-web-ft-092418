@@ -19,7 +19,6 @@ class Scraper
     doc = Nokogiri::HTML(open(profile_url))
     profile_hash = {
       bio: doc.css(".description-holder" p).text,
-      github: doc.css(".social-icon-container a").attr("href").value if .include?"github",
       profile_quote: doc.css(".profile-quote").text
     }
     
