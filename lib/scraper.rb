@@ -12,6 +12,7 @@ class Scraper
         location: student.css("p.student-location".text),
         profile_url: student.css("a").attr("href").value
       }
+    end 
   end
 
   def self.scrape_profile_page(profile_url)
