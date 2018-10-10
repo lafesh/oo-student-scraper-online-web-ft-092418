@@ -8,7 +8,7 @@ class Scraper
     doc = Nokogiri::HTML(open(index_url))
     doc.css("div.student-card").map do |student|
       student_hash = {
-        name: ,
+        name: student.css(""),
         location: ,
         profile_url: student.css("a").attr("href").value
       }
