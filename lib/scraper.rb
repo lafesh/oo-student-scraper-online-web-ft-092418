@@ -35,7 +35,7 @@ class Scraper
         profile_hash[:blog] = link
       end 
     end 
-    #profile_hash
+    profile_hash
   end
 
 end
