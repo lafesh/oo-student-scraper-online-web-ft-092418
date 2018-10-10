@@ -21,11 +21,11 @@ class Scraper
       bio: doc.css(".description-holder p").text,
       profile_quote: doc.css(".profile-quote").text
     }
-    binding.pry 
+     
     
     links = doc.css(".social-icon-container a").map {|b| b.attr("href").value}
      # profile_hash[:github] = doc.css(".social-icon-container a").attr("href").value
-
+binding.pry
     end 
     
     profile_hash
