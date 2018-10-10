@@ -34,21 +34,8 @@ class Scraper
       else
         profile_hash[:blog] = link
       end 
-      
     end 
-    
-
-  
-    
-    profile_hash
-
-    
-    #<div class="social-icon-container">
-          #<a href="https://twitter.com/jmburges"><img class="social-icon" src="../assets/img/twitter-icon.png"/></a>
-          #<a href="https://www.linkedin.com/in/jmburges"><img class="social-icon" src="../assets/img/linkedin-icon.png"/></a>
-          #<a href="https://github.com/jmburges"><img class="social-icon" src="../assets/img/github-icon.png"/></a>
-          #<a href="http://joemburgess.com/"><img class="social-icon" src="../assets/img/rss-icon.png"/></a>
-        #</div>
+    #profile_hash
   end
 
 end
