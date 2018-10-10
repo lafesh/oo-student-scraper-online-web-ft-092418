@@ -10,7 +10,7 @@ class Scraper
       student_hash = {
         name: ,
         location: ,
-        profile_url: student.css("a").attr
+        profile_url: student.css("a").attr("href").value
       }
   end
 
