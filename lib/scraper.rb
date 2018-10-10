@@ -22,7 +22,7 @@ class Scraper
       profile_quote: doc.css(".profile-quote").text
     }
     
-    if doc.css(".social-icon-container a").attr("href").value.include?"github"
+    if doc.css(".social-icon-container a").attr("href").value.include?("github")
       profile_hash[:github] = doc.css(".social-icon-container a").attr("href").value
     end 
     
