@@ -22,9 +22,7 @@ class Scraper
       github: doc.css(".social-icon-container a").attr("href").value if .include?"github"
       profile_quote: doc.css(".profile-quote").text
     }
-    doc.css(".social-icon-container a").each do |link|
-      if link.find {|string| }
-    end 
+
     
     <div class="social-icon-container">
           <a href="https://twitter.com/jmburges"><img class="social-icon" src="../assets/img/twitter-icon.png"/></a>
