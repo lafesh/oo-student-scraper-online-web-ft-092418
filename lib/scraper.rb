@@ -21,6 +21,7 @@ class Scraper
       bio: doc.css(".description-holder p").text,
       profile_quote: doc.css(".profile-quote").text
     }
+    binding.pry 
     
     if doc.css(".social-icon-container a").attr("href").value.include?("github")
       profile_hash[:github] = doc.css(".social-icon-container a").attr("href").value
